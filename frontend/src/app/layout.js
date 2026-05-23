@@ -4,8 +4,8 @@ import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
-  title: "Social Networking Site - Abdul Rehman",
-  description: "Social networking site by Abdul Rehman in NextJs, MERN STACK",
+  title: "BeSocial - Gopal Pandey",
+  description: "BeSocial by Gopal Pandey | MERN Stack Developer | Spring Boot Developer",
 };
 
 export default function RootLayout({ children }) {
@@ -16,9 +16,13 @@ export default function RootLayout({ children }) {
           color="#8b5cf6"
           showSpinner={false}
         />
+
         <Providers>
-          <RootLayoutClient>{children}</RootLayoutClient>
+          <RootLayoutClient>
+            {children}
+          </RootLayoutClient>
         </Providers>
+
       </body>
     </html>
   );
